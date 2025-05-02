@@ -1,0 +1,12 @@
+<div>
+  <p id="GEresult1">45</p>
+  <p id="GEresult2">30</p>
+  <p id="GEresultTotal"></p>
+</div>
+
+<script>
+  const GEresult1 = parseFloat(document.getElementById('GEresult1').textContent) || 0;
+  const GEresult2 = parseFloat(document.getElementById('GEresult2').textContent) || 0;
+
+  document.getElementById('GEresultTotal').textContent = GEresult1 + GEresult2;
+</script>
